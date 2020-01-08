@@ -1,6 +1,7 @@
 package br.com.nobu.nobuService.model;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,7 +16,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name="books")
+@Table(name="pessoa")
 public class Pessoa implements Serializable{
 	
 	/**
@@ -30,4 +31,9 @@ public class Pessoa implements Serializable{
 	private String nome;
 	@Column(name = "email", nullable = false, length = 180)
 	private String email;
+	@Column(name = "dataNascimento", nullable = false, length = 180)
+	private Date dataNascimento;
+	@Column(name = "cargo", nullable = false, length = 180)
+	private String cargo;
+
 }
