@@ -19,5 +19,10 @@ public class PessoaService {
 		return pessoaRepository.findAll();
 	}
 
+	public Pessoa create(Pessoa pessoa) {
+		// TODO Auto-generated method stub
+		return pessoaRepository.save(pessoa);
+	}
+
 	
 }
