@@ -29,11 +29,7 @@ public class Pessoa implements Serializable{
 	private Long id;
 	@Column(name = "nome", nullable = false, length = 180)
 	private String nome;
-	@Column(name = "email", nullable = false, length = 180)
-	private String email;
-	@Column(name = "dataNascimento", nullable = false, length = 180)
-	private Date dataNascimento;
-	@Column(name = "cargo", nullable = false, length = 180)
-	private String cargo;
+	@Column(name = "size", nullable = false, length = 180)
+	private Long size;
 
 }
